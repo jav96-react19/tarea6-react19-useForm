@@ -1,6 +1,6 @@
 # Tarea 6 React 19
 
-** NOVEDADES respecto Tarea 5 **
+**NOVEDADES respecto Tarea 5**
 
 - Componente:
 
@@ -19,7 +19,7 @@
      - **handleButtonClick**  --> Modifica el estado del botón de true a false y hace el recuento de veces que se ha clicado.
      - **handleButtonText** --> Modifica el texto del botón a partir de la referencia con **useRef** cuando el usuario se pone encima y sale
      del botón.
-     
+
 <br/>
 
 ![alt text](/src/assets/img/task6_preview.gif)
