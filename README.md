@@ -24,4 +24,23 @@
 
 ![alt text](/src/assets/img/task6_preview.gif)
 
+HandleSubmit: [https://react-hook-form.com](https://react-hook-form.com/docs/useform/handlesubmit "HandleSubmit useForm")
+<br/>
+
+Register: [https://react-hook-form.com](https://react-hook-form.com/docs/useform/register "Register useForm")
+<br/>
+
+FormState: [https://react-hook-form.com](https://react-hook-form.com/docs/useform/formstate "FormState useForm")
+<br/>
+
+Reset: [https://react-hook-form.com](https://react-hook-form.com/docs/useform/reset "Reset useForm")
+
+<br/>
+Codigo de ejemplo inspirado para la tarea: 
+
+[https://codesandbox.io](https://codesandbox.io/p/sandbox/react-hook-form-reset-v7-r7m5s?file=%2Fsrc%2Findex.js "Code and Sandbox Ejemplo")
+
+
+
+
 
