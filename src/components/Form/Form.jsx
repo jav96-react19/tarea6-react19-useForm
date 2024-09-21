@@ -1,8 +1,12 @@
-import useFormData from "@/hooks/FormData/useFormData";
+import useFormData from "@/hooks/FormData/useFormData.jsx";
+import { MessageNotification } from "@/utils/MessageNotification/MessageNotification.jsx";
 import { useForm } from "react-hook-form";
+import { Toaster} from "sonner";
 
 const Form = () => 
 { 
+  const {success, error} = MessageNotification();
+
   const {
     register, 
     handleSubmit,
@@ -17,12 +21,16 @@ const Form = () =>
     //Método de useForm que comprueba que el formulario no tenga errores en el momento que se este enviando
     //y en caso afirmativo almacena los datos para mostrarlos en el DOM
     if(isValid)
+    {
+      success();
       setFormData(data);
+    }
   }
+  const SubmitError = () => error();
 
     return ( 
         <div className="p-12 relative flex flex-col rounded-xl bg-transparent bg-clip-border shadow-none">
-          <form onSubmit={handleSubmit(SubmitForm)} className="mx-auto w-80 max-w-screen-lg mobile:w-full">
+          <form onSubmit={handleSubmit(SubmitForm, SubmitError)} className="mx-auto w-80 max-w-screen-lg mobile:w-full">
               <h4 className="mb-8 block font-sans text-2xl font-semibold leading-snug tracking-normal text-white antialiased">
                   {isSubmitSuccessful ? "¡Gracias por contactarme!" : "¡Contáctame!"}
               </h4>
@@ -138,6 +146,8 @@ const Form = () =>
                 />
             }
           </form>
+
+          <Toaster position="bottom-right" richColors/>
         </div>
     )
 }
